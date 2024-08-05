@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course registration form</title>
+    <link rel="stylesheet" href="stptl.js">
+    <link rel="stylesheet" href="style.css">
+    <!-- <h1>Course registration form</h1> -->
+</head>
+<body  >
+    <div class="bg"></div>
+    <form >
+        <div>
+            <center><h1>Course registration portal</h1></center>
+        </div>
+        <div>
+            <label for="Regno">Regno</label>
+            <input type="text" id="regno" name="Regno" >
+        </div>
+        <br>
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="name" name="Name" >
+        </div>
+        <br>
+        <div>
+            <label for="Year">Year</label>
+            <select name="Year" id="year" >
+                <option value="null">select an year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Sem">Sem</label>
+            <select name="Sem" id="sem" >
+                <option value="null">select a sem</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Ac.year">Ac.year</label>
+            <select name="Ac.year" id="acyear" >
+                <option value="null">Select the academiic year</option>
+                <option value="2024-2025">2024-2025</option>
+                <option value="2023-2024">2023-2024</option>
+                <option value="2022-2023">2023-2024</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Subcode">Subcode</label>
+            <input type="text" name="Subcode" id="subcode" >
+        </div>
+        <br>
+        <div>
+            <label for="Subname">Subname</label>
+            <input type="text" name="Subname" id="subname" >
+        </div>
+        <br>
+        <div>
+            <label for="Credit">Credit</label>
+            <input type="text" name="Credit" id="credit">
+        </div>
+        <br>
+        <div>
+            <label for="core/pe/oe">core/pe/oe</label>
+            <select name="core/pe/oe" id="type">
+                <option value="null">select Course type</option>
+                <option value="core">core</option>
+                <option value="pe">pe</option>
+                <option value="oe">oe</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+    </form>
+    <script src="stptl.js"></script>
+</body>
+</html>
