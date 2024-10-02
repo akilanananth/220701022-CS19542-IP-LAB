@@ -1,0 +1,65 @@
+.onenav {
+    background-color: rgb(35, 168, 189);
+    padding-left:14px ;
+    color: azure;
+}
+.a-head {
+    padding-inline: 10px;
+    color: azure;
+}
+.right-corner{
+    display: flex;
+    padding-left:1100px;
+}
+.wikipedia{
+    width: 95%;
+    height: 60vh; /* Make the iframe occupy the full viewport height */
+    overflow:hidden; /* Hide scroll bars, optional */
+    padding-right: 3px;
+    padding-left: 3px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.left-canvas {
+    width: 50px;
+    height: 40px;
+  }
+
+  .right-svg {
+    margin-right: 30px;
+    display: block;
+  }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(35, 168, 189);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    z-index: 1000;
+}
+.service-center{
+    text-align: center;
+    padding-top: 23px;
+    color: rgb(35, 168, 189);
+}
+.footer-img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+  
+  .left-img {
+    margin-left: 10px;
+}
+  
+  .right-img {
+    margin-right: 10px;
+}

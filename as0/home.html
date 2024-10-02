@@ -1,0 +1,58 @@
+<html>
+    <head class="one">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>healthy bites</title>
+        <nav class="onenav">
+            <h6 class="right-corner" style="padding-top: 10px;">Call: 9999999999</h6>
+            <H1>Healthy Bites</H1>
+            <a href="home.html" class="a-head">Home</a>
+            <a href="About.html" class="a-head">About</a>
+            <a href="Services.html" class="a-head">Services</a>
+            <a href="Contact.html" class="a-head">Contact</a>
+        </nav>
+    </head>
+    <body>
+        <div style="text-align: center; margin-top: 20px;">
+            <p>Select a color to change the background of the page:</p>
+            <input type="color" id="bgColorInput">
+            <button onclick="changeBackgroundColor()">Submit</button>
+        </div>
+    
+        <iframe class="wikipedia" src="https://en.wikipedia.org/wiki/Nutrition"></iframe>
+    </body>
+    <footer class="footer">
+        <canvas id="leftCanvas" class="left-canvas"></canvas>
+        <p>© 2024 Your Company</p>
+        <svg class="right-svg" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="20" fill="white" />
+          </svg>
+    </footer>
+    
+    
+    <script>
+        // Function to change background color
+        function changeBackgroundColor() {
+            // Get the color value from the input
+            var color = document.getElementById("bgColorInput").value;
+            // Set the background color of the body
+            document.body.style.backgroundColor = color;
+        }
+
+        // Canvas drawing script
+        window.onload = function() {
+         // Get the canvas element
+          const canvas = document.getElementById('leftCanvas');
+        const ctx = canvas.getContext('2d');
+
+  // Set the canvas width and height
+      canvas.width = 50;
+          canvas.height = 40;
+
+  // Draw a rectangle on the canvas
+     ctx.fillStyle = 'white'; // Set rectangle color
+   ctx.fillRect(0, 0, 50, 40); // Draw the rectangle
+};
+    </script>
+</html>
