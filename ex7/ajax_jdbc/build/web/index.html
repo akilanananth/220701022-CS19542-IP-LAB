@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <script>
+        function fetchStudentDetails() {
+            const regNo = document.getElementById("regNo").value;
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "GetStudentDetails?regNo=" + regNo, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById("studentDetails").innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <label for="regNo">Select Registration Number:</label>
+    <select id="regNo" onchange="fetchStudentDetails()">
+        <option value="">--Select--</option>
+        <option value="101">101</option>
+        <option value="102">102</option>
+        <option value="103">103</option>
+    </select>
+    <div id="studentDetails">
+        <!-- Student details will appear here -->
+    </div>
+</body>
+</html>

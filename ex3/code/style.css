@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 .bg{
-    background-image: url(/ex3a/images/bg.jpg);
+    background-image: url(/ex3/images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
